@@ -1,0 +1,28 @@
+
+GIT Commands:
+1. GIT INIT
+2.GIT CONFIG  
+     git config --global user.name "Vasuki"
+     git config --global user.name "vasukisiva2017pdm@gmail.com"
+     git config --global --edit
+3.GIT CLONE
+4.GIT ADD
+      git add first.txt
+      git add .
+5.GIT COMMIT
+   git commit -m "Saving first.txt"
+6.GIT STATUS - status of file 
+7.GIT RM
+8.GIT BRANCH
+9.GIT MERGE
+10.GIT PUSH
+11.GIT PULL
+12.GIT REMOTE
+13.GIT IGNORE
+14.GIT LOG
+15.GIT SHOW
+16.GIT --version
+17.clear   Clears the screen
+
+
+https://git-scm.com/videos
