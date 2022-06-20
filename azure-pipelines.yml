@@ -19,15 +19,16 @@ stages:
         - script: echo 'running spring demo app unit test'
         - task: Maven@3
           inputs:
-             mavenPomFile: 'pom.xml'
-             goals: 'test'
-             publishJUnitResults: true
-             testResultsFiles: '**/surefire-reports/TEST-*.xml'
-             codeCoverageToolOption: 'JaCoCo'
-             javaHomeOption: 'JDKVersion'
-             mavenVersionOption: 'Default'
-             mavenAuthenticateFeed: false
-             effectivePomSkip: false
-             sonarQubeRunAnalysis: false
-             checkStyleRunAnalysis: true
-             pmdRunAnalysis: true
+            mavenPomFile: 'pom.xml'
+            goals: 'test'
+            publishJUnitResults: true
+            testResultsFiles: '**/surefire-reports/TEST-*.xml'
+            codeCoverageToolOption: 'JaCoCo'
+            codeCoverageRestoreOriginalPomXml: true
+            javaHomeOption: 'JDKVersion'
+            mavenVersionOption: 'Default'
+            mavenAuthenticateFeed: false
+            effectivePomSkip: false
+            sonarQubeRunAnalysis: false
+            checkStyleRunAnalysis: true
+            pmdRunAnalysis: true
